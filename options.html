@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leetcode Helper Options</title>
+    <style>
+      body {
+        background: #181a1b;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 400px;
+        margin: 60px auto;
+        background: #23272a;
+        padding: 2rem 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      }
+      .row {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 0.5rem;
+        color: #bdbdbd;
+        font-size: 1rem;
+      }
+      input[type="password"] {
+        background: #181a1b;
+        color: #e0e0e0;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s;
+      }
+      input[type="password"]:focus {
+        border: 1.5px solid #4f8cff;
+      }
+      a {
+        color: #4f8cff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #82aaff;
+      }
+      p {
+        color: #bdbdbd;
+        font-size: 0.98rem;
+      }
+
+      button {
+        background: #181a1b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: 1.5px solid #23272a;
+      }
+
+      button:hover {
+        border: 1.5px solid #4f8cff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="row">
+          <label for="GEMINI_API_KEY">GEMINI API Key:</label>
+          <input type="password" id="GEMINI_API_KEY_INPUT" name="GEMINI_API_KEY" />
+        </div>
+        <button id="saveButton">Save</button>
+      </div>
+      <p>You can get the api key from 
+        <a href="https://aistudio.google.com/apikey">Google AI Studio.</a>
+      </p> 
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
