@@ -116,7 +116,7 @@ Leetcode-Helper-Extension/
 ├── background.js         # Background service worker
 ├── options.html          # Settings page
 ├── options.js            # Settings logic
-├── text-parser.js        # marked.js library (Markdown parser)
+├── text-parser.js        # Bundled marked.js v15.0.12 library for Markdown rendering
 ├── icon.png              # Extension icon
 └── README.md             # This file
 ```
@@ -131,7 +131,7 @@ The extension requires the following permissions:
 
 ## 🔒 Privacy & Security
 
-- Your API key is stored securely using Chrome's sync storage (synced across your Chrome browsers when signed in)
+- Your API key is stored securely using `chrome.storage.sync` (synced across your Chrome browsers when signed in)
 - No data is sent to any third-party servers except Google's Gemini API
 - The extension only activates on LeetCode problem pages
 - All communication with Gemini API is done over HTTPS
@@ -185,7 +185,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📝 License
 
-This project is open source and available under the MIT License.
+This project is currently unlicensed. Please contact the author for licensing information.
 
 ## 👨‍💻 Author
 
